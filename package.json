@@ -1,0 +1,61 @@
+{
+  "name": "social-cops-assignment",
+  "version": "1.0.0",
+  "description": "Social cops assignment",
+  "author": "Rahul Kumar <rahulkumar2048@gmail.com>",
+  "main": "src/index,js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "precommit": "npm run lint",
+    "prestart": "npm run docs",
+    "start": "cross-env NODE_ENV=production pm2 start ./src/index.js",
+    "dev": "nodemon --inspect ./src/index.js",
+    "test": "nyc --reporter=html mocha src/api/tests/integration",
+    "docs": "apidoc -i src -o docs",
+    "postdocs": "opn docs/index.html",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "postcoverage": "opn coverage/index.html",
+    "lint": "eslint ./src/ --ignore-path .gitignore",
+    "validate": "npm run lint && npm run test",
+    "docker:start": "cross-env NODE_ENV=production pm2-docker start ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rahulkumar66/social-cops-assignment.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "cross-env": "^5.2.0",
+    "dotenv-safe": "^6.0.0",
+    "express": "^4.16.3",
+    "express-validation": "^1.0.2",
+    "fast-json-patch": "^2.0.7",
+    "gm": "^1.23.1",
+    "helmet": "^3.13.0",
+    "http-status": "^1.2.0",
+    "joi": "^13.6.0",
+    "jwt-simple": "^0.5.3",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pm2": "^3.1.2",
+    "request": "^2.88.0",
+    "sharp": "^0.20.8",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.6.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "nyc": "^13.0.1",
+    "opn-cli": "^3.1.0",
+    "rewire": "^4.0.1",
+    "supertest": "^3.0.0"
+  }
+}
