@@ -9,8 +9,8 @@
  Clone the repo:
 
 ```bash
-git clone --depth 1 git@github.com:rahulkumar66/social-cops-assignment.git
-cd social-cops-assignment
+git clone --depth 1 git@github.com:rahulkumar66/express-node-es6-boilerplate.git
+cd express-node-es6-boilerplate
 ```
 
 Install dependencies:
@@ -60,6 +60,3 @@ npm run coverage
 # generate and open api documentation
 npm run docs
 ```
-
-## Postman collection
-[Postman collection](https://www.getpostman.com/collections/5f58a37bcb816be7302f)
