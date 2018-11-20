@@ -1,7 +1,7 @@
 {
-  "name": "social-cops-assignment",
+  "name": "express-node-es6-boilerplate",
   "version": "1.0.0",
-  "description": "Social cops assignment",
+  "description": "Boilerplate code for a simple express app",
   "author": "Rahul Kumar <rahulkumar2048@gmail.com>",
   "main": "src/index,js",
   "license": "MIT",
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:rahulkumar66/social-cops-assignment.git"
+    "url": "git@github.com:rahulkumar66/express-node-es6-boilerplate.git"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
