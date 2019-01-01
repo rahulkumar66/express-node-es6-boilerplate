@@ -2,7 +2,7 @@
   "name": "express-node-es6-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate code for a simple express app",
-  "author": "Rahul Kumar <rahulkumar2048@gmail.com>",
+  "author": "",
   "main": "src/index,js",
   "license": "MIT",
   "engines": {
@@ -33,8 +33,6 @@
     "dotenv-safe": "^6.0.0",
     "express": "^4.16.3",
     "express-validation": "^1.0.2",
-    "fast-json-patch": "^2.0.7",
-    "gm": "^1.23.1",
     "helmet": "^3.13.0",
     "http-status": "^1.2.0",
     "joi": "^13.6.0",
@@ -44,7 +42,6 @@
     "passport-jwt": "^4.0.0",
     "pm2": "^3.1.2",
     "request": "^2.88.0",
-    "sharp": "^0.20.8",
     "winston": "^3.1.0"
   },
   "devDependencies": {
