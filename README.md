@@ -1,5 +1,3 @@
-[![Coverage Status](https://coveralls.io/repos/github/rahulkumar66/social-cops-assignment/badge.svg?branch=master)](https://coveralls.io/github/rahulkumar66/social-cops-assignment?branch=master)
-
 ## Requirements
 
  - [Node v7.6+](https://nodejs.org/en/download/current/)
@@ -9,7 +7,7 @@
  Clone the repo:
 
 ```bash
-git clone --depth 1 git@github.com:rahulkumar66/express-node-es6-boilerplate.git
+git clone git@github.com:rahulkumar66/express-node-es6-boilerplate.git
 cd express-node-es6-boilerplate
 ```
 
